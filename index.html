@@ -1,32 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>CSS Multiple Examples</title>
+    <title>Inline, Internal, External CSS Demo</title>
 
     <!-- Internal CSS -->
     <style>
-        body {
-            font-family: Arial;
-            text-align: center;
-            background-color: #f4f4f4;
+        .para-internal {
+            color: blue;
         }
 
-        .paragraph {
-            color: darkblue;
-            margin: 10px;
-        }
-
-        .highlight {
+        .highlight-internal {
             background-color: yellow;
             font-weight: bold;
         }
 
-        .building {
-            width: 250px;
-            margin: 15px auto;
-            padding: 15px;
+        .building-internal {
+            width: 200px;
+            margin: 10px auto;
+            padding: 10px;
             border: 2px solid black;
             background-color: white;
+            text-align: center;
         }
     </style>
 
@@ -36,31 +30,79 @@
 
 <body>
 
-    <!-- Inline CSS Example -->
-    <h1 style="color: red;">CSS Multiple Examples</h1>
+    <h1 style="color: red;">CSS Complete Demo</h1>
 
-    <!-- Paragraphs (3 examples) -->
-    <p class="paragraph">Paragraph 1: This is the first paragraph.</p>
-    <p class="paragraph">Paragraph 2: This is the second paragraph.</p>
-    <p class="paragraph">Paragraph 3: This is the third paragraph.</p>
+    <!-- ================= INLINE CSS ================= -->
 
-    <!-- Highlights (3 examples) -->
-    <p class="paragraph">
-        Highlight 1: <span class="highlight">Important text</span>
+    <h2>Inline CSS Examples</h2>
+
+    <p style="color: green;">Paragraph 1 (Inline)</p>
+    <p style="color: purple;">Paragraph 2 (Inline)</p>
+    <p style="color: orange;">Paragraph 3 (Inline)</p>
+
+    <p>
+        Highlight: <span style="background-color: yellow;">Inline Highlight 1</span>
+    </p>
+    <p>
+        Highlight: <span style="background-color: lightblue;">Inline Highlight 2</span>
+    </p>
+    <p>
+        Highlight: <span style="background-color: pink;">Inline Highlight 3</span>
     </p>
 
-    <p class="paragraph">
-        Highlight 2: <span class="highlight">Another highlighted text</span>
+    <div style="border: 2px solid black; padding: 10px; margin: 10px;">
+        Building 1 (Inline)
+    </div>
+    <div style="border: 2px solid black; padding: 10px; margin: 10px;">
+        Building 2 (Inline)
+    </div>
+    <div style="border: 2px solid black; padding: 10px; margin: 10px;">
+        Building 3 (Inline)
+    </div>
+
+    <!-- ================= INTERNAL CSS ================= -->
+
+    <h2>Internal CSS Examples</h2>
+
+    <p class="para-internal">Paragraph 1 (Internal)</p>
+    <p class="para-internal">Paragraph 2 (Internal)</p>
+    <p class="para-internal">Paragraph 3 (Internal)</p>
+
+    <p>
+        <span class="highlight-internal">Highlight 1 (Internal)</span>
+    </p>
+    <p>
+        <span class="highlight-internal">Highlight 2 (Internal)</span>
+    </p>
+    <p>
+        <span class="highlight-internal">Highlight 3 (Internal)</span>
     </p>
 
-    <p class="paragraph">
-        Highlight 3: <span class="highlight">Final highlighted text</span>
+    <div class="building-internal">Building 1 (Internal)</div>
+    <div class="building-internal">Building 2 (Internal)</div>
+    <div class="building-internal">Building 3 (Internal)</div>
+
+    <!-- ================= EXTERNAL CSS ================= -->
+
+    <h2>External CSS Examples</h2>
+
+    <p class="para-external">Paragraph 1 (External)</p>
+    <p class="para-external">Paragraph 2 (External)</p>
+    <p class="para-external">Paragraph 3 (External)</p>
+
+    <p>
+        <span class="highlight-external">Highlight 1 (External)</span>
+    </p>
+    <p>
+        <span class="highlight-external">Highlight 2 (External)</span>
+    </p>
+    <p>
+        <span class="highlight-external">Highlight 3 (External)</span>
     </p>
 
-    <!-- Buildings / Containers (3 examples) -->
-    <div class="building">Building 1: Container box</div>
-    <div class="building">Building 2: Another container</div>
-    <div class="building">Building 3: Final container</div>
+    <div class="building-external">Building 1 (External)</div>
+    <div class="building-external">Building 2 (External)</div>
+    <div class="building-external">Building 3 (External)</div>
 
 </body>
 </html>
