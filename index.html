@@ -1,13 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Paragraph Styling</title>
+    <title>CSS Combined Layout</title>
 
     <!-- Internal CSS -->
     <style>
         .para2 {
             color: orange;
             font-weight: bold;
+        }
+
+        .highlight-internal {
+            background-color: yellow;
+            font-weight: bold;
+        }
+
+        .building2 {
+            border: 2px solid black;
+            padding: 10px;
+            margin: 10px;
+            width: 200px;
+            text-align: center;
+        }
+
+        .h2-style {
+            color: green;
         }
     </style>
 
@@ -17,20 +34,54 @@
 
 <body>
 
-    <!-- Paragraph 1: Inline CSS (Blue + Italic) -->
+    <h1>PARAGRAPHS</h1>
+
+    <!-- Paragraphs -->
     <p style="color: blue; font-style: italic;">
-        Paragraph 1: Blue and italic
+        Paragraph 1 (Inline): Blue and italic
     </p>
 
-    <!-- Paragraph 2: Internal CSS (Orange + Bold) -->
     <p class="para2">
-        Paragraph 2:.Orange and bold
+        Paragraph 2 (Internal): Orange and bold
     </p>
 
-    <!-- Paragraph 3: External CSS (Purple + Underlined) -->
     <p class="para3">
-        Paragraph 3:Purple and underlined
+        Paragraph 3 (External): Purple and underlined
     </p>
+
+    <hr>
+
+    <h1>HIGHLIGHTS</h1>
+
+    <!-- Highlights -->
+    <p>
+        Inline Highlight: <span style="background-color: yellow;">Highlight 1</span>
+    </p>
+
+    <p>
+        Internal Highlight: <span class="highlight-internal">Highlight 2</span>
+    </p>
+
+    <p>
+        External Highlight: <span class="highlight-external">Highlight 3</span>
+    </p>
+
+    <hr>
+
+    <h1>BUILDINGS</h1>
+
+    <!-- Buildings -->
+    <div style="border: 2px solid black; padding: 10px; margin: 10px; width: 200px; text-align: center;">
+        Building 1 (Inline)
+    </div>
+
+    <div class="building2">
+        Building 2 (Internal)
+    </div>
+
+    <div class="building3">
+        Building 3 (External)
+    </div>
 
 </body>
 </html>
