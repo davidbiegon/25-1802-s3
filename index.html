@@ -1,26 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Inline, Internal, External CSS Demo</title>
+    <title>Paragraph Styling</title>
 
     <!-- Internal CSS -->
     <style>
-        .para-internal {
-            color: blue;
-        }
-
-        .highlight-internal {
-            background-color: yellow;
+        .para2 {
+            color: orange;
             font-weight: bold;
-        }
-
-        .building-internal {
-            width: 200px;
-            margin: 10px auto;
-            padding: 10px;
-            border: 2px solid black;
-            background-color: white;
-            text-align: center;
         }
     </style>
 
@@ -30,79 +17,20 @@
 
 <body>
 
-    <h1 style="color: red;">CSS Complete Demo</h1>
-
-    <!-- ================= INLINE CSS ================= -->
-
-    <h2>Inline CSS Examples</h2>
-
-    <p style="color: green;">Paragraph 1 (</p>
-    <p style="color: purple;">Paragraph 2 </p>
-    <p style="color: orange;">Paragraph 3 </p>
-
-    <p>
-        Highlight: <span style="background-color: yellow;">Highlight 1</span>
-    </p>
-    <p>
-        Highlight: <span style="background-color: lightblue;">Highlight 2</span>
-    </p>
-    <p>
-        Highlight: <span style="background-color: pink;">Highlight 3</span>
+    <!-- Paragraph 1: Inline CSS (Blue + Italic) -->
+    <p style="color: blue; font-style: italic;">
+        Paragraph 1: HI DAVID 
     </p>
 
-    <div style="border: 2px solid black; padding: 10px; margin: 10px;">
-        Building 1 
-    </div>
-    <div style="border: 2px solid black; padding: 10px; margin: 10px;">
-        Building 2 
-    </div>
-    <div style="border: 2px solid black; padding: 10px; margin: 10px;">
-        Building 3 
-    </div>
-
-    <!-- ================= INTERNAL CSS ================= -->
-
-    <h2>Internal CSS Examples</h2>
-
-    <p class="para-internal">Paragraph 1 </p>
-    <p class="para-internal">Paragraph 2 </p>
-    <p class="para-internal">Paragraph 3 </p>
-
-    <p>
-        <span class="highlight-internal">Highlight 1 </span>
-    </p>
-    <p>
-        <span class="highlight-internal">Highlight 2 </span>
-    </p>
-    <p>
-        <span class="highlight-internal">Highlight 3 </span>
+    <!-- Paragraph 2: Internal CSS (Orange + Bold) -->
+    <p class="para2">
+        Paragraph 2: IN DAYSTAR.
     </p>
 
-    <div class="building-internal">Building 1 </div>
-    <div class="building-internal">Building 2 </div>
-    <div class="building-internal">Building 3 </div>
-
-    <!-- ================= EXTERNAL CSS ================= -->
-
-    <h2>External CSS Examples</h2>
-
-    <p class="para-external">Paragraph 1 </p>
-    <p class="para-external">Paragraph 2 </p>
-    <p class="para-external">Paragraph 3 </p>
-
-    <p>
-        <span class="highlight-external">Highlight 1 </span>
+    <!-- Paragraph 3: External CSS (Purple + Underlined) -->
+    <p class="para3">
+        Paragraph 3: LOVE FOOD.
     </p>
-    <p>
-        <span class="highlight-external">Highlight 2 </span>
-    </p>
-    <p>
-        <span class="highlight-external">Highlight 3 </span>
-    </p>
-
-    <div class="building-external">Building 1 </div>
-    <div class="building-external">Building 2 </div>
-    <div class="building-external">Building 3 </div>
 
 </body>
 </html>
